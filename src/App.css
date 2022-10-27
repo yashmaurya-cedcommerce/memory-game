@@ -2,37 +2,52 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homeContainer {
+  width: 80%;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gridContainer
+{
+  width: 80%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.imageContainer
+{
+  width: 23%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gridImage
+{
+  width: 100%;
+  height: 10vw;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.4s;
+}
+
+.gridImage:hover
+{
+  scale: 1.1;
+}
+
+.fadedImage
+{
+  width: 100%;
+  height: 10vw;
+  cursor: pointer;
+  opacity: 60%;
+  border-radius: 6px;
+}
+
+.winMessage
+{
+  font-size: 1.6vw;
+  font-weight: bolder;
 }
